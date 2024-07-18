@@ -29,65 +29,56 @@ export default function Home() {
   ];
   const products = [
     {
-      title: "Moonbeam",
-      link: "https://gomoonbeam.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      title: "NodeJS",
+      link: "https://nodejs.org/en/download/package-manager",
+      thumbnail: "https://www.ictdemy.com/images/5728/nodejs_logo.png",
     },
     {
-      title: "Cursor",
-      link: "https://cursor.so",
+      title: "React",
+      link: "https://react.dev/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+        "https://th.bing.com/th/id/R.692adb35708d9279ca7eb56c71bfc102?rik=hNgh9iAYWQWBkw&riu=http%3a%2f%2fangular.github.io%2freact-native-renderer%2fassets%2freact.png&ehk=8iIITJSxQoapFfYG36FJh80Iaoof0dOE6HcLjoUAU1I%3d&risl=&pid=ImgRaw&r=0",
     },
     {
-      title: "Rogue",
-      link: "https://userogue.com",
+      title: "Typescript",
+      link: "https://www.typescriptlang.org/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-    },
-
-    {
-      title: "Editorially",
-      link: "https://editorially.org",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
+      title: "MongoDB",
+      link: "https://www.mongodb.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+        "https://th.bing.com/th/id/R.0e23481b805fa66eb9ff0c177ff27030?rik=00LN9yVT3nMAyw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flogo-mongodb-png-mongodb-1600.png&ehk=YwJU48GqAzZ6V3Zlafc4pyilw%2biV5XBxEO7chpNV3M8%3d&risl=&pid=ImgRaw&r=0",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      title: "NodeJS",
+      link: "https://nodejs.org/en/download/package-manager",
+      thumbnail: "https://www.ictdemy.com/images/5728/nodejs_logo.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
+      title: "PostgreSQL",
+      link: "https://www.postgresql.org/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+        "https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
+      title: "Tailwind",
+      link: "https://tailwindcss.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png?20230715030042",
+    },
+    {
+      title: "ExpressJS",
+      link: "https://expressjs.com/",
+      thumbnail:
+        "https://inapp.com/wp-content/uploads/elementor/thumbs/express-js-01-1-q05uw85vt1jqloiy5k82sfy7tgvysgt1uqld8slsbc.png",
     },
     {
       title: "Editrix AI",
-      link: "https://editrix.ai",
+      link: "https://graphql.org/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-    },
-    {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+        "https://cdn.freelogovectors.net/wp-content/uploads/2021/01/graphql-logo-freelogovectors.net_.png",
     },
     {
       title: "Editrix AI",
@@ -97,15 +88,16 @@ export default function Home() {
     },
   ];
   return (
-    <div className=" w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="max-w-2xl mx-auto p-4 pb-16 h-screen">
-        <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
-          UNDER DEVELOPMENT SABAR YAA GESS
-        </h1>
-        <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
-          UNDER DEVELOPMENT SABAR YAA GESS
-        </h1>
-
+    <div className="relative w-full rounded-md bg-neutral-950">
+      <div className="flex h-screen flex-col items-center justify-center antialiased">
+        <div className="mx-auto max-w-2xl p-4 pb-16">
+          <h2 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
+            MASIH UNDER DEVELOPMENT
+          </h2>
+          <h1 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
+            SABAR YAA GESS
+          </h1>
+        </div>
         <p></p>
         {/* <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
           Welcome to MailJet, the best transactional email service on the web.
@@ -117,7 +109,7 @@ export default function Home() {
       </div>
       <HeroParallax products={products} />
       {/* <BackgroundBeams className="w-screen h-screen" /> */}
-      <div className="relative  w-full">
+      <div className="relative w-full">
         <FloatingNav navItems={navItems} />
       </div>
     </div>
