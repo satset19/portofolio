@@ -11,7 +11,11 @@ const nextConfig = {
             "www.ictdemy.com",
             "inapp.com",
             "cdn.freelogovectors.net",
-            "cdn.freebiesupply.com"
+            "cdn.freebiesupply.com",
+            "logos-world.net",
+            "wallpaperbat.com",
+            "uxwing.com",
+            "assets.aceternity.com"
         ],
     },
 };
