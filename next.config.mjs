@@ -10,7 +10,8 @@ const nextConfig = {
             "aceternity.com",
             "www.ictdemy.com",
             "inapp.com",
-            "cdn.freelogovectors.net"
+            "cdn.freelogovectors.net",
+            "cdn.freebiesupply.com"
         ],
     },
 };

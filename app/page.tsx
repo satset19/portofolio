@@ -75,16 +75,16 @@ export default function Home() {
         "https://inapp.com/wp-content/uploads/elementor/thumbs/express-js-01-1-q05uw85vt1jqloiy5k82sfy7tgvysgt1uqld8slsbc.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://graphql.org/",
+      title: "VusJS",
+      link: "https://vuejs.org/",
       thumbnail:
-        "https://cdn.freelogovectors.net/wp-content/uploads/2021/01/graphql-logo-freelogovectors.net_.png",
+        "https://cdn.freebiesupply.com/logos/large/2x/vue-9-logo-png-transparent.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
+      title: "PostgreSQL",
+      link: "https://www.postgresql.org/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+        "https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png",
     },
   ];
   return (
