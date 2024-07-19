@@ -15,7 +15,10 @@ const nextConfig = {
             "logos-world.net",
             "wallpaperbat.com",
             "uxwing.com",
-            "assets.aceternity.com"
+            "assets.aceternity.com",
+            "ui.aceternity.com",
+            "encrypted-tbn0.gstatic.com",
+            "i.pinimg.com"
         ],
     },
 };

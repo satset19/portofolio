@@ -1,9 +1,12 @@
+import { PinContainer } from "@/components/3d-pin";
 import { AuroraBackground } from "@/components/aurora-background";
 import { BackgroundBeams } from "@/components/background-beams";
 import { ExpandableCardDemo } from "@/components/expanable-card";
+
 import { FloatingNav } from "@/components/floating-navbar";
 import { HeroParallax } from "@/components/hero-parallax";
-import { StickyScroll } from "@/components/sticky-scroll-reveal";
+import WorkExperience from "@/sections/workExperience";
+
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
 import { motion } from "framer-motion";
@@ -119,84 +122,86 @@ export default function Home() {
         "https://cdn.freebiesupply.com/logos/large/2x/firebase-1-logo-png-transparent.png",
     },
   ];
-  const content = [
+
+  const history = [
     {
-      title: "Collaborative Editing",
-      description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-          Collaborative Editing
-        </div>
-      ),
+      name: "Timkado Sejahtera Indonesia",
+      title: "Frontend Developer",
+      tahun: "2024-Sekarang",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghbGCYWCJLgSsRZY__uEBfVeUd290s8rDzg&s",
     },
     {
-      title: "Real time changes",
-      description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-          <Image
-            src="/linear.webp"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="linear board demo"
-          />
-        </div>
-      ),
+      name: "Timkado Sejahtera Indonesia",
+      title: "DevOps and Testing",
+      tahun: "2023-2024",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghbGCYWCJLgSsRZY__uEBfVeUd290s8rDzg&s",
     },
     {
-      title: "Version control",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
-          Version control
-        </div>
-      ),
-    },
-    {
-      title: "Running out of content",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-          Running out of content
-        </div>
-      ),
+      name: "Uniqlo",
+      title: "Store Staff",
+      tahun: "2019-2022",
+      image: "https://cdn.freebiesupply.com/logos/thumbs/2x/uniqlo-logo.png",
     },
   ];
 
+  const education = [
+    {
+      name: "Timkado Sejahtera Indonesia",
+      title: "Frontend Developer",
+      tahun: "2024-Sekarang",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghbGCYWCJLgSsRZY__uEBfVeUd290s8rDzg&s",
+    },
+    {
+      name: "Timkado Sejahtera Indonesia",
+      title: "DevOps and Testing",
+      tahun: "2023-2024",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghbGCYWCJLgSsRZY__uEBfVeUd290s8rDzg&s",
+    },
+    {
+      name: "Uniqlo",
+      title: "Store Staff",
+      tahun: "2019-2022",
+      image: "https://cdn.freebiesupply.com/logos/thumbs/2x/uniqlo-logo.png",
+    },
+  ];
   return (
     <div className="relative w-full rounded-md bg-neutral-950">
-      <div className="flex h-screen flex-col items-center justify-center antialiased">
-        <div className="mx-auto max-w-2xl p-4 pb-16">
-          <h2 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
-            MASIH UNDER DEVELOPMENT
-          </h2>
-          <h1 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
-            SABAR YAA GESS
-          </h1>
-        </div>
-        <p></p>
-        {/* <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
+      <section>
+        <div className="flex h-screen flex-col items-center justify-center antialiased">
+          <div className="mx-auto max-w-2xl p-4 pb-16">
+            <h2 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
+              MASIH UNDER DEVELOPMENT
+            </h2>
+            <h1 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
+              SABAR YAA GESS
+            </h1>
+          </div>
+          <p></p>
+          {/* <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
           Welcome to MailJet, the best transactional email service on the web.
           We provide reliable, scalable, and customizable email solutions for
           your business. Whether you&apos;re sending order confirmations,
           password reset emails, or promotional campaigns, MailJet has got you
           covered.
           </p> */}
-      </div>
-      <HeroParallax products={products} />
+        </div>
+      </section>
+      <section>
+        <HeroParallax products={products} />
+      </section>
       {/* <BackgroundBeams className="w-screen h-screen" /> */}
-      <StickyScroll content={content} />
-      <div className="h-full w-full items-center justify-center">
+      <WorkExperience history={history} />
+      <WorkExperience history={education} />
+      <section className="h-full w-full items-center justify-center">
         <ExpandableCardDemo />
-      </div>
-      <div className="relative w-full">
+      </section>
+      <section className="relative w-full">
         <FloatingNav navItems={navItems} />
-      </div>
+      </section>
     </div>
   );
 }
