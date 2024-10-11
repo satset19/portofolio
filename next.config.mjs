@@ -18,7 +18,9 @@ const nextConfig = {
             "assets.aceternity.com",
             "ui.aceternity.com",
             "encrypted-tbn0.gstatic.com",
-            "i.pinimg.com"
+            "i.pinimg.com",
+            "images.unsplash.com",
+            "placecats.com"
         ],
     },
 };

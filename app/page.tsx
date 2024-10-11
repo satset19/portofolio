@@ -1,16 +1,19 @@
-import { PinContainer } from "@/components/3d-pin";
-import { AuroraBackground } from "@/components/aurora-background";
-import { BackgroundBeams } from "@/components/background-beams";
-import { ExpandableCardDemo } from "@/components/expanable-card";
+import "../main.css";
+import { ExpandableCardDemo } from "@/components/cardExpandable";
+import { FlipWords } from "@/components/changeWord";
 
-import { FloatingNav } from "@/components/floating-navbar";
-import { HeroParallax } from "@/components/hero-parallax";
-import WorkExperience from "@/sections/workExperience";
+import { FloatingNav } from "@/components/stickyNavbar";
+import { HeroParallax } from "@/components/paralaxStack";
+import { FirstPage } from "@/sections/FirstPage";
+import { WorkExperience } from "@/sections/WorkExperience";
 
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { ContactSection } from "@/sections/ContactPage";
+import { ProjectPage } from "@/sections/ProjectPage";
+import { EducationPage } from "@/sections/EducationPage";
 
 export default function Home() {
   const navItems = [
@@ -168,37 +171,21 @@ export default function Home() {
       image: "https://cdn.freebiesupply.com/logos/thumbs/2x/uniqlo-logo.png",
     },
   ];
+
   return (
     <div className="relative w-full rounded-md bg-neutral-950">
-      <section>
-        <div className="flex h-screen flex-col items-center justify-center antialiased">
-          <div className="mx-auto max-w-2xl p-4 pb-16">
-            <h2 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
-              MASIH UNDER DEVELOPMENT
-            </h2>
-            <h1 className="relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-7xl">
-              SABAR YAA GESS
-            </h1>
-          </div>
-          <p></p>
-          {/* <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-          Welcome to MailJet, the best transactional email service on the web.
-          We provide reliable, scalable, and customizable email solutions for
-          your business. Whether you&apos;re sending order confirmations,
-          password reset emails, or promotional campaigns, MailJet has got you
-          covered.
-          </p> */}
-        </div>
-      </section>
-      <section>
-        <HeroParallax products={products} />
-      </section>
+      <FirstPage />
+
+      <HeroParallax products={products} />
+
       {/* <BackgroundBeams className="w-screen h-screen" /> */}
-      <WorkExperience history={history} />
-      <WorkExperience history={education} />
-      <section className="h-full w-full items-center justify-center">
-        <ExpandableCardDemo />
-      </section>
+      {/* <WorkExperience history={history} /> */}
+      <WorkExperience />
+
+      <EducationPage />
+      <ProjectPage />
+
+      <ContactSection />
       <section className="relative w-full">
         <FloatingNav navItems={navItems} />
       </section>

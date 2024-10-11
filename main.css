@@ -1,0 +1,19 @@
+/* ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: var(--background);
+    color: #FFFF;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--background);
+} */
+
+/* scroll-snap-align: center; */
