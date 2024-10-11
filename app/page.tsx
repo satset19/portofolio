@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/changeWord";
 import { FloatingNav } from "@/components/stickyNavbar";
 import { HeroParallax } from "@/components/paralaxStack";
 import { FirstPage } from "@/sections/FirstPage";
-import { WorkExperience } from "@/sections/WorkExperience";
+import { WorkExperience } from "@/sections/workExperience";
 
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
